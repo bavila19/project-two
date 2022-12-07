@@ -18,8 +18,8 @@ function App() {
         <Link to="/compliments">
           <div>Compliments</div>
         </Link>
-        <Link to="/Meme">
-          <div>Funny Memes</div>
+        <Link to="/Puppy">
+          <div>Puppy Pick Me Ups</div>
         </Link>
         <Link to="/Hotline">
           <div>HOTLINE</div>

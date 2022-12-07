@@ -1,7 +1,7 @@
 import './App.css';
 import { Link } from 'react-router-dom'
 import Compliments from './components/Compliments';
-import Meme from './components/Meme';
+import Puppy from './components/Puppy';
 import Hotline from './components/Hotline';
 //components 
 
@@ -18,8 +18,8 @@ function App() {
         <Link to="/compliments">
           <div>Compliments</div>
         </Link>
-        <Link to="/Meme">
-          <div>Funny Memes</div>
+        <Link to="/Puppy">
+          <div>Puppy Pick Me Ups</div>
         </Link>
         <Link to="/Hotline">
           <div>HOTLINE</div>
@@ -29,7 +29,7 @@ function App() {
         <Routes>
           <Route path='/' element=" " />
           <Route path="/compliments" element={<Compliments/>}/>
-          <Route path="/Meme" element={<Meme/>} />
+          <Route path="/Puppy" element={<Puppy/>} />
           <Route path="/Hotline" element={<Hotline/>} />
         </Routes>
        

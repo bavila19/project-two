@@ -19,15 +19,18 @@ function Compliments (props){
     },[])
 
     return(
-        <div>
-            {compliments ? <>
-                <h2>
-                    {compliments.compliment}
-                </h2>
-         </> : null}
-            <h1>Hype me up</h1>
-            <button onClick={fetchID}>Hype my up</button>
-      
+        <div className="complimentCard">
+            <div className="hypeDetails">
+
+                <h1>Hype me up</h1>
+                    {compliments ? <>
+                        <h2>
+                            {compliments.compliment}
+                        </h2>
+                    </> : null}
+                <button onClick={fetchID} className="happyBtn">Hype my up</button>
+        
+            </div>
         </div >
     )
 }

@@ -15,12 +15,6 @@ function App() {
       <Link to="/">
           <div>Home</div>
         </Link>
-        <Link to="/compliments">
-          <div>Compliments</div>
-        </Link>
-        <Link to="/Meme">
-          <div>Funny Memes</div>
-        </Link>
         <Link to="/Hotline">
           <div>HOTLINE</div>
         </Link>
@@ -33,6 +27,12 @@ function App() {
           <Route path="/Hotline" element={<Hotline/>} />
         </Routes>
        
+        <Link to="/compliments">
+          <div>Compliments</div>
+        </Link>
+        <Link to="/Meme">
+          <div>Funny Memes</div>
+        </Link>
       </main>
     </div>
   );

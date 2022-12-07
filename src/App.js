@@ -1,8 +1,8 @@
 import './App.css';
 import { Link } from 'react-router-dom'
 import Compliments from './components/Compliments';
-import Insults from './components/Insults';
-import Hot from './components/Hotline';
+import Meme from './components/Meme';
+import Hotline from './components/Hotline';
 //components 
 
 import {Routes, Route} from 'react-router-dom'
@@ -18,15 +18,19 @@ function App() {
         <Link to="/compliments">
           <div>Compliments</div>
         </Link>
-        <Link to="/insults">
-          <div>Insults</div>
+        <Link to="/Meme">
+          <div>Funny Memes</div>
+        </Link>
+        <Link to="/Hotline">
+          <div>HOTLINE</div>
         </Link>
       </nav>
       <main>
         <Routes>
           <Route path='/' element=" " />
           <Route path="/compliments" element={<Compliments/>}/>
-          <Route path="/insults" element={<Insults/>} />
+          <Route path="/Meme" element={<Meme/>} />
+          <Route path="/Hotline" element={<Hotline/>} />
         </Routes>
        
       </main>

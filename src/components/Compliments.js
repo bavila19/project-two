@@ -24,7 +24,7 @@ function Compliments (props){
                 <h2>
                     {compliments.compliment}
                 </h2>
-             </> : null}
+         </> : null}
             <h1>Hype me up</h1>
             <button onClick={fetchID}>Hype my up</button>
       

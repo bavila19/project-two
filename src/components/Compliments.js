@@ -1,6 +1,44 @@
+import { useEffect, useState } from "react"
+import { json } from "react-router";
+
 function Compliments (props){
+    const [compliments, setCompliments] = useState(null)
+
+    // useEffect(()=>{ 
+    //     const url = "https://complimentr.com/api"
+    //     fetch(url)
+    //     .then((res) => res.json())
+    //     .then((json)=> {
+    //         console.log(json)
+    //         setCompliments(json)
+    //     })
+    //     .catch(console.error)
+    // },[]);
+    async function fetchID(){
+        try{
+            const response = await fetch (`https://complimentr.com/api`)
+            const complimentsData = await response.json()
+            console.log(complimentsData)
+            setCompliments(complimentsData)
+    }catch(err){
+        console.log(err)
+    }
+}
+    useEffect(()=>{
+        fetchID()
+    },[])
+
     return(
-        <h1>Hype me up</h1>
+        <div>
+              {compliments ? <>
+      <h2>
+        {compliments.compliment}
+      </h2>
+    </> : null}
+            <h1>Hype me up</h1>
+            <button onClick={fetchID}>Hype my up</button>
+      
+        </div >
     )
 }
 

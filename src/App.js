@@ -32,7 +32,6 @@ function App() {
           <Route path="/Puppy" element={<Puppy/>} />
           <Route path="/Hotline" element={<Hotline/>} />
         </Routes>
-       
       </main>
     </div>
   );

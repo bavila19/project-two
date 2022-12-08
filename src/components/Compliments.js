@@ -29,7 +29,6 @@ function Compliments (props){
                         </h2>
                     </> : null}
                 <button onClick={fetchID} className="happyBtn">Hype my up</button>
-        
             </div>
         </div >
     )

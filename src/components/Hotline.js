@@ -42,7 +42,13 @@ function Hotline ( props ) {
                     Crisis Text Line: Text REASON to <a href="tel:741741">741741</a>
                 </p>
             </div>
-            
+            <div className="hotline">
+                <p> 
+                    Find a Therapist: <a href="https://www.psychologytoday.com/us/therapists">
+                    <img border="0" alt="Psychology Today" src="http://sites.nd.edu/darcianarvaez/files/2018/04/psychology-today-logo-600x300.png" width="200" height="100"/>
+                    </a>
+                </p>
+            </div>
         </div>
     )
 } 

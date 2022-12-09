@@ -19,15 +19,17 @@ function Puppy ( props ) {
     }, [])
 
     return (
-        <div>
-    {puppy ? <>
-      <img width={200} src={puppy.message} alt="puppy" />
-      <h2>
-        Puppy Pick Me Ups
-      </h2>
-    </> : null}
-    <button onClick={fetchId}>New Puppy</button>
-  </div>
+      <div className="puppyCard">
+        <div className="puppyDetails">
+          <h2>
+            Puppy Pick Me Ups
+          </h2>
+          {puppy ? <>
+            <img width={200} src={puppy.message} alt="puppy" />
+          </> : null}
+        </div>
+        <button className="puppyBtn" onClick={fetchId}>New Puppy</button>
+      </div>
 
     )
 } 

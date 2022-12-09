@@ -9,6 +9,12 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+body{
+  background-image:url("https://img.freepik.com/premium-vector/dog-butterfly-oneline-art-drawing-color-art-vector_175735-110.jpg?w=2000") ;
+  background-size:1350px;
+  background-position: 300px;
+  background-position-y: -250px;
+}
 
 .App-header {
   background-color: #282c34;
@@ -35,31 +41,55 @@
 }
 /* nav */
 nav{
-  background-color: rgb(204, 255, 254);
+  background-color: #ace999;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   padding-top: 15px;
   padding-bottom: 5px;
+  opacity:.7 ;
+  height: 30px;
+  font-size: 20px;
 }
 
 /* compliments  */
-.complimentCard, memeCard {
+.complimentCard, .puppyCard {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
   
   
 }
-.hypeDetails{
-  flex-direction: column;
-  align-items: center;
+.hypeDetails, .puppyDetails{
+  /* flex-direction: row; */
+  /* align-items: center; */
   width: 500px;
   background-color: bisque;
   margin-top: 150px;
   border: 5px outset rgb(149, 139, 139);
 }
 
-.happyBtn{
+.happyBtn, .puppyBtn{
   background-color: rgb(161, 219, 219);
-  border-color: rgb(62, 62, 75);
+  border-color: rgb(112, 160, 232);
+  width: 150px;
+  height: 50px;
+  margin-top: 30px;
+  font-size: 18px;
+}
+.homeCard {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 250px;
+  
+}
+.cards {
+  border: 5px solid #ace999;
+  background-color: rgb(112, 160, 232);
+  width: 200px;
+  height:50px;
+  padding-top: 20px;
+  font-size: 20px;
+  opacity: .7;
 }

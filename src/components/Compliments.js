@@ -21,9 +21,9 @@ function Compliments (props){
     return(
         <div className="complimentCard">
             <div className="hypeDetails">
-                <h1>Hype me up</h1>
+                <h1 className="compliment">Compliment</h1>
                     {compliments ? <>
-                        <h2>
+                        <h2 className="text">
                             {compliments.compliment}
                         </h2>
                     </> : null}

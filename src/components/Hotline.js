@@ -36,10 +36,20 @@ function Hotline ( props ) {
                 <p>
                     Anxiety HOTLINE: <a href="tel:866-903-3787">866-903-3787</a>
                 </p>
+                <p>
+                    <a href="https://mentalhealthhotline.org/anxiety-hotline/">
+                    <img border="0" alt="MentalHealth" src="https://cdn-dgljp.nitrocdn.com/ddYdeMwzaIvWCgWJLMyGGDYlFZSElbZR/assets/static/optimized/rev-704434c/wp-content/uploads/2021/08/cropped-Final_logo_colored-300x136ASA-200x91.png" width="200" height="100"/>
+                    </a>
+                </p>
             </div>
             <div className="hotline">
                 <p>
                     Crisis Text Line: Text REASON to <a href="tel:741741">741741</a>
+                </p>
+                <p>
+                    <a href="https://www.crisistextline.org/">
+                    <img border="0" alt="CrisisTextLine" src="https://www.datingnews.com/wp-content/uploads/2018/11/ctlogoo.jpg" width="200" height="50"/>
+                    </a>
                 </p>
             </div>
             

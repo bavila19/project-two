@@ -14,17 +14,18 @@ function App() {
     <div className="App">
       <h1>How are you feeling?</h1>
       <nav>
-      <Link to="/">
+        <Link to="/" id='home'>
           <div>Home</div>
         </Link>
-        <Link to="/About">
-          <div>About</div>
-        </Link>
-        <Link to="/Hotline">
-          <div>HOTLINE</div>
-        </Link>
+        <div className='about-hotline'>
+          <Link to="/About" id='about'>
+            <div>About</div>
+          </Link>
+          <Link to="/Hotline" id='hotline'>
+            <div>HOTLINE</div>
+          </Link>
+        </div>
       </nav>
-     
       <main>
         <Routes>
           <Route path='/' element={<Home/>}/>

@@ -5,10 +5,10 @@ function Home () {
 
    return(
     <div className="homeCard">
-    <Link to="/compliments" className="cards" id="compliments">
+    <Link to="/compliments" className="cards">
       <div >Compliments</div>
     </Link>
-    <Link to="/Puppy" className="cards" id= "puppy">
+    <Link to="/Puppy" className="cards" >
       <div>Puppy Pick Me Ups</div>
     </Link>
     </div>

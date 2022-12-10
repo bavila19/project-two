@@ -104,7 +104,7 @@ nav{
 .breedName {
   font-size: 25px;
 }
-
+/* text inside compliment card */
 .text{
   padding-top: 100px;
   font-size: 35px;
@@ -168,10 +168,73 @@ span{
   font-size: 20px;
   width: 600px;
 }
+.img200x100{
+  width: 200px;
+  height: 100px;
+}
+.img200x200{
+  width:200px;
+  height:100px;
+}
+.img200x50{
+  width:200px;
+  height:50px;
+}
 
-
-/*Mobile portrait View*/
 @media screen and (max-device-width: 480px)
 and (orientation: portrait) {
- 
+  nav{
+    display:flex;
+    flex-direction: row;
+    width:450px;
+    padding-left: 10px;
+    justify-content: space-evenly;
+  }
+  #about, #hotline{
+    margin-right: 15px;
+    padding-left: 30px;
+    
+  }
+  
+  .homeCard{
+    flex-direction: column;
+    margin-top: 100px;
+    
+  }
+  .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height:150px;
+    width: 350px;
+    padding:0;
+    font-weight: bolder;
+    font-size: 40px;
+  }
+  .puppyPics{
+    width: 250px;
+  }
+  .hypeDetails, .puppyDetails{
+    width: 300px;
+    /* margin:0; */
+  }
+  .text{
+    margin: 0;
+    padding-top:70px;
+  }
+  .pContainer {
+    width: 350px;
+  } 
+  .container1, .container2{
+    display: flex;
+    flex-direction: column;
+  }
+  .hotline {
+    margin: 10px;
+  }
+  .container1, .container2{
+    margin:0;
+  }
 }

@@ -12,7 +12,7 @@ import {Routes, Route} from 'react-router-dom'
 function App() {
   return (
     <div className="App">
-      <h1>How are you feeling?</h1>
+      <h1 className='title'>How are you feeling?</h1>
       <nav>
         <Link to="/" id='home'>
           <div>Home</div>

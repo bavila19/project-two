@@ -5,6 +5,7 @@ function Puppy ( props ) {
     const [puppy, setPuppy] = useState (null)
   let arrOfStr=[]
   let str;
+  // let name= puppy.arrOfStr[4]
     
     async function fetchId() {
         try {
@@ -24,19 +25,22 @@ function Puppy ( props ) {
     str = puppy.message
     arrOfStr = str.split("/",5);
     }
-    
-    console.log(arrOfStr);
-    
+    const name = arrOfStr[4]
+    console.log(name);
     return (
       <div className="puppyCard">
         <div className="puppyDetails">
           <h2 className='puppy'>
             Puppy Pick Me Ups
           </h2>
-          {puppy ? <>
-            <img width={300} height={300} src={puppy.message} alt="puppy" />
+          <div className='picContainer'>
+            {puppy ? <>
+            <img className='puppyPics' src={puppy.message} alt="puppy" />
           </> : null}
-          <div><h3>Breed Name: {arrOfStr[4]}</h3></div>
+          </div>
+          
+            
+          <div><h3 className="breedName">Breed Name: {name}</h3></div>
         </div>
         <button className="puppyBtn" onClick={fetchId}>New Puppy</button>
       </div>

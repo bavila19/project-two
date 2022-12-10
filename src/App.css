@@ -1,18 +1,28 @@
 
 
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* *{
+  outline-style: solid;
+  outline-color: red;
+} */
+a:Link, a:visited{
+  text-decoration:none;
+  color:rgb(18, 86, 99);
 }
+
+a:hover, a:active {
+  color: rgb(240, 81, 252);
+  text-decoration: underline;
+}
+
 body{
   background-image:url("https://img.freepik.com/premium-vector/dog-butterfly-oneline-art-drawing-color-art-vector_175735-110.jpg?w=2000") ;
   background-repeat: no-repeat;
   background-size:1350px;
   background-position: center;
-  background-position-y: -250px;
+  background-position-y: -200px;
   background-color: rgb(247, 250, 253);
+  font-family: 'Barlow', sans-serif;
 }
 
 .App {
@@ -21,7 +31,9 @@ body{
   flex-direction: column;
   align-items: center;
 }
-
+.title{
+  font-size: 45px ;
+}
 /* nav */
 nav{
   background-color: #ace999;
@@ -29,7 +41,7 @@ nav{
   flex-direction:row;
   justify-content: space-between;
   padding-top: 15px;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   opacity:.7 ;
   height: 30px;
   width: 95vw;
@@ -37,6 +49,7 @@ nav{
 }
 #home{
   padding-left: 10px;
+  font-size: 25px;
 }
 .about-hotline{
   display: flex;
@@ -47,6 +60,7 @@ nav{
 #hotline, #about{
   margin-left: 10px;
   margin-right: 10px;
+  font-size: 25px;
 }
 
 /* compliments  */
@@ -55,23 +69,41 @@ nav{
   flex-direction: column;
   align-items: center;
 }
-
-.compliment,.puppy{
-  background-color: #ace999;
+/* headers in borders */
+.compliment,.puppy, .hotline-head{
+  background-color: rgb(172, 233, 153);
   padding-top: 15px;
   padding-bottom: 15px;
   margin-top: 0px;
+  border-radius: 11px 11px 0 0;
 }
-
+.hotline-head{
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
 
 .hypeDetails, .puppyDetails{
   width: 500px;
-  height: 400px;
   margin-top: 150px;
   border: 5px outset rgba(149, 139, 139);
-  background-color: rgba(240, 248, 255, 0.797);
+  border-radius: 15px;
+  background-color: rgba(240, 248, 255, 0.889);
 }
-
+.hypeDetails{
+  height: 400px;
+}
+.picContainer{
+  padding-top: 10px;
+}
+.puppyPics{
+  width: 350px; 
+  border-radius: 5px;
+}
+.breedName {
+  font-size: 25px;
+}
 
 .text{
   padding-top: 100px;
@@ -81,6 +113,7 @@ nav{
 .happyBtn, .puppyBtn{
   background-color: rgb(161, 219, 219);
   border-color: rgb(112, 160, 232);
+  border-radius: 25px;
   width: 150px;
   height: 50px;
   margin-top: 30px;
@@ -94,13 +127,51 @@ nav{
 }
 .cards {
   border: 5px solid #ace999;
+  border-radius:25px;
   background-color: rgb(112, 160, 232);
   width: 200px;
   height:50px;
   padding-top: 20px;
   font-size: 20px;
   opacity: .7;
-  /* margin:50px; */
   margin-left: 150px;
   margin-right: 150px
+}
+
+.container1, .container2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.container2{
+  justify-content: center;
+}
+.hotline{
+  border: 5px solid rgba(149, 139, 139);
+  border-radius: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: rgba(240, 248, 255, 0.889);
+}
+.header{
+  font-weight: black ;
+  font-size: 30px;
+}
+span{
+  color: blue;
+  font-size: 20px;
+}
+.pContainer{
+  background: rgba(240, 248, 255, 0.313);
+  font-size: 20px;
+  width: 600px;
+}
+
+
+/*Mobile portrait View*/
+@media screen and (max-device-width: 480px)
+and (orientation: portrait) {
+ 
 }

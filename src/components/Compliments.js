@@ -3,7 +3,6 @@ import { json } from "react-router";
 
 function Compliments (props){
     const [compliments, setCompliments] = useState(null)
-
     async function fetchID(){
         try{
             const response = await fetch (`https://complimentr.com/api`)
@@ -13,11 +12,10 @@ function Compliments (props){
     }catch(err){
         console.log(err)
     }
-}
+    }
     useEffect(()=>{
         fetchID()
     },[])
-
     return(
         <div className="complimentCard">
             <div className="hypeDetails">
@@ -28,7 +26,7 @@ function Compliments (props){
                         </h2>
                     </> : null}
             </div>
-                <button onClick={fetchID} className="happyBtn">Hype me up</button>
+                <button onClick={fetchID} className="happyBtn">Hype Me Up</button>
         </div >
     )
 }

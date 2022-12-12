@@ -5,8 +5,6 @@ function Puppy ( props ) {
     const [puppy, setPuppy] = useState (null)
   let arrOfStr=[]
   let str;
-  // let name= puppy.arrOfStr[4]
-    
     async function fetchId() {
         try {
           const response = await fetch(`https://dog.ceo/api/breeds/image/random`)
@@ -17,7 +15,6 @@ function Puppy ( props ) {
           console.log(err)
         }
       }
-
     useEffect(() => {
         fetchId()
     }, [])

@@ -11,7 +11,7 @@ a:Link, a:visited{
 }
 
 a:hover, a:active {
-  color: rgb(240, 81, 252);
+  color: rgb(82, 48, 193);
   text-decoration: underline;
 }
 
@@ -128,12 +128,12 @@ nav{
 .cards {
   border: 5px solid #ace999;
   border-radius:25px;
-  background-color: rgb(112, 160, 232);
-  width: 200px;
-  height:50px;
-  padding-top: 20px;
+  background-color: rgba(112, 160, 232, 0.907);
+  width: 250px;
+  height:60px;
+  padding-top: 30px;
   font-size: 20px;
-  opacity: .7;
+  /* opacity: .7; */
   margin-left: 150px;
   margin-right: 150px
 }

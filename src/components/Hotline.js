@@ -41,7 +41,7 @@ function Hotline ( props ) {
                 <div className="hotline">
                     <div className="hotline-head">
                         <p>Anxiety HOTLINE:</p> 
-                        <p><a href="tel:866-903-3787"><span>866-903-3787</span></a></p>
+                        <p><a href="tel:866-903-3787"><span>Call 866-903-3787</span></a></p>
                     </div>
                     <p>
                         <a href="https://mentalhealthhotline.org/anxiety-hotline/">
@@ -61,8 +61,7 @@ function Hotline ( props ) {
                     </p>
                 </div>
             </div>
-        </div>
-        
+        </div> 
     )
 } 
 

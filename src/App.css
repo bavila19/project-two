@@ -132,10 +132,10 @@ nav{
   width: 250px;
   height:60px;
   padding-top: 30px;
+  padding-bottom: 0;
   font-size: 20px;
-  /* opacity: .7; */
   margin-left: 150px;
-  margin-right: 150px
+  margin-right: 150px;
 }
 
 .container1, .container2{
@@ -213,12 +213,21 @@ and (orientation: portrait) {
     font-weight: bolder;
     font-size: 40px;
   }
+  #introP{
+    margin-left: 150px;
+  }
   .puppyPics{
     width: 250px;
   }
   .hypeDetails, .puppyDetails{
     width: 300px;
-    /* margin:0; */
+    margin-top:50px;
+    margin-bottom: 10px;
+
+  }
+  .happyBtn, .puppyBtn{
+    margin-top: 15px;
+    margin-bottom: 50px;
   }
   .text{
     margin: 0;
@@ -230,11 +239,10 @@ and (orientation: portrait) {
   .container1, .container2{
     display: flex;
     flex-direction: column;
+    margin: 0;
   }
   .hotline {
     margin: 10px;
   }
-  .container1, .container2{
-    margin:0;
-  }
+  
 }

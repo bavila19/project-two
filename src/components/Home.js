@@ -18,7 +18,7 @@ function Home () {
     </div>
     
     <div className="container2">
-      <p className="pContainer"> Choose either compliments or puppy pick me ups to make your day slightly better!</p>
+      <p className="pContainer" id="introP"> Choose either compliments or puppy pick me ups to make your day slightly better!</p>
     </div>
     
     </div>
